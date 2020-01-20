@@ -221,9 +221,9 @@ public class ThemeManager implements CustomizationManager<ThemeBundle> {
 
     private void applyHeader(ThemeBundledHeaderInfo headerInfo) {
         Settings.System.putString(mActivity.getContentResolver(),
-                Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_IMAGE,
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_IMAGE,
                 headerInfo.getDrawableResName());
         Settings.System.putString(mActivity.getContentResolver(),
-                Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_PROVIDER, "static");
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_PROVIDER, "static");
     }
 }

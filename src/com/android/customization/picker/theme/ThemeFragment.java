@@ -607,7 +607,7 @@ public class ThemeFragment extends ToolbarFragment {
                             v.setImageDrawable(previewInfo.headerImage);
 
                             boolean headerDisabled = Settings.System.getInt(activity.getContentResolver(),
-                                    Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER, 0) == 0;
+                                    Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 0;
                             if (headerDisabled) {
                                 desc.setVisibility(View.VISIBLE);
                                 desc.setText(R.string.hint_header_disabled);
